@@ -5,11 +5,107 @@
 //  Created by Tieme van Veen on 04/04/2024.
 //
 
+import MountebankSwift
 import XCTest
 
 @MainActor
 final class FeedUITests: XCTestCase {
-    func testErrorHandling() async throws {
+    let mountebank = Mountebank()
 
+    func testErrorHandling() async throws {
+        let listsImposter = Imposter(
+            name: "\(Self.self).\(#function).lists",
+            stubs: [
+                Stub(
+                    responses: [
+                        Is(statusCode: 500),
+                        Is(statusCode: 200, body: ["podcasts": []]),
+                        Is(statusCode: 200, body: Feed(podcasts: [
+                            Podcast(
+                                title: "Cocaheads",
+                                author: "iOS devs NL",
+                                description: "A great podcast about coding in The Netherlands",
+                                id: "12345",
+                                url: "https://https://cocoaheads.nl/"
+                            ),
+                            Podcast(
+                                title: "Serial",
+                                author: "Serial Productions",
+                                description: "Serial returns with a history of Guantánamo told by people who lived through key moments in Guantánamo’s evolution, who know things the rest of us don’t about what it’s like to be caught inside an improvised justice system.",
+                                id: "2f31dfb0-2249-0132-b5ae-5f4c86fd3263",
+                                url: "https://serialpodcast.org"
+                            ),
+                            Podcast(
+                                title: "Rolling Stone's 500 Greatest Songs",
+                                author: "iHeartPodcasts",
+                                description: "This exclusive podcast from Rolling Stone tells the stories behind the “500 Greatest Songs of All Time.\"",
+                                id: "852a66f0-bdf4-013c-5160-0acc26574db2",
+                                url: "https://www.iheart.com/podcast/1119-rolling-stones-500-greate-156412458/"
+                            ),
+                            Podcast(
+                                title: "Murder in the Hollywood Hills",
+                                author: "NBC News",
+                                description: "Kristi Johnson was shopping at a mall in Los Angeles when a man invited her to a photo shoot for the next Bond film. That afternoon, the 21-year-old got into her little white sportscar and drove to the shoot location up in the Hollywood Hills. She was never seen alive again. ",
+                                id: "93138b50-c531-013c-c54a-0aec82e01c75",
+                                url: "https://murder-in-the-hollywood-hills.simplecast.com"
+                            ),
+                        ])),
+                    ],
+                    predicate: .equals(Request(method: .get, path: "/trending.json"))
+                ),
+            ],
+            recordRequests: true
+        )
+
+        guard let listsPort = try await mountebank.postImposter(imposter: listsImposter).port else {
+            XCTFail("Port should have been set by now")
+            return
+        }
+        addTeardownBlock { try await self.mountebank.deleteImposter(port: listsPort) }
+
+        let imagesImposter = Imposter(
+            name: "\(Self.self).\(#function).images",
+            stubs: [
+                Stub(
+                    response: Is(statusCode: 200, body: Example.jpg.data),
+                    predicate: .matches(Request(method: .get, path: "/discover/images"))
+                ),
+            ],
+            recordRequests: true
+        )
+
+        guard let imagesPort = try await mountebank.postImposter(imposter: imagesImposter).port else {
+            XCTFail("Port should have been set by now")
+            return
+        }
+        addTeardownBlock { try await self.mountebank.deleteImposter(port: imagesPort) }
+
+        let app = XCUIApplication()
+        app.launchArguments = ["-UITesting"]
+        app.launchEnvironment["listApiHost"] = "http://localhost:\(listsPort)"
+        app.launchEnvironment["imagesApiHost"] = "http://localhost:\(imagesPort)"
+        app.launch()
+
+        XCTAssertTrue(app.staticTexts["Error: 500"].exists)
+        app.buttons["Retry"].tap()
+
+        sleep(2) // Sleep for a better-to-follow-demo
+
+        XCTAssertTrue(app.staticTexts["No podcasts found"].exists)
+        app.buttons["Retry"].tap()
+
+        sleep(2)
+
+        XCTAssertTrue(app.staticTexts["Cocaheads"].exists)
+
+        let listRequests = try await mountebank.getImposter(port: listsPort).requests
+        let imagesRequests = try await mountebank.getImposter(port: imagesPort).requests
+
+        XCTAssertEqual(listRequests?.count, 3)
+        XCTAssertEqual(listRequests?.first?.headers?.contains { $0.key == "Accept" }, true)
+
+        XCTAssertEqual(imagesRequests?.count, 4)
+
+        sleep(2)
     }
 }
