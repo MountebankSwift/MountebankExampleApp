@@ -59,13 +59,18 @@ final class PodcastUITests: XCTestCase {
         }
         addTeardownBlock { try await self.mountebank.deleteImposter(port: listsPort) }
 
+        let podcastImageData = UIImage(
+            systemName: "speaker.wave.2.circle.fill",
+            withConfiguration: UIImage.SymbolConfiguration.preferringMulticolor()
+        )!.pngData()!
+
         let imagesImposter = Imposter(
             name: "\(Self.self).\(#function).images",
             stubs: [
                 Stub(
-                    response: Is(statusCode: 200, body: Example.jpg.data),
-                    predicate: .matches(Request(method: .get, path: "/discover/image"))
-                ),
+                    response: Is(statusCode: 200, body: podcastImageData),
+                    predicate: .matches(Request(method: .get, path: "/discover/images"))
+                )
             ],
             recordRequests: true
         )

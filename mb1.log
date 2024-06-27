@@ -1,0 +1,128 @@
+{"level":"warn","message":"[mb:2525] Running with --allowInjection set. See http://localhost:2525/docs/security for security info","timestamp":"2024-05-27T06:43:13.978Z"}
+{"level":"info","message":"[mb:2525] mountebank v2.9.1 now taking orders - point your browser to http://localhost:2525/ for help","timestamp":"2024-05-27T06:43:13.981Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:43:17.240Z"}
+{"level":"info","message":"[http:52043 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T06:43:17.244Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:43:17.310Z"}
+{"level":"info","message":"[http:52044 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T06:43:17.315Z"}
+{"level":"info","message":"[http:52043 FeedUITests.testErrorHandling().lists] ::1:52060 => GET /trending.json","timestamp":"2024-05-27T06:43:20.020Z"}
+{"level":"info","message":"[http:52043 FeedUITests.testErrorHandling().lists] ::1:52069 => GET /trending.json","timestamp":"2024-05-27T06:43:22.403Z"}
+{"level":"info","message":"[http:52043 FeedUITests.testErrorHandling().lists] ::1:52079 => GET /trending.json","timestamp":"2024-05-27T06:43:24.612Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:43:37.875Z"}
+{"level":"info","message":"[http:52168 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T06:43:37.881Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:43:37.910Z"}
+{"level":"info","message":"[http:52169 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T06:43:37.917Z"}
+{"level":"info","message":"[http:52168 FeedUITests.testErrorHandling().lists] ::1:52177 => GET /trending.json","timestamp":"2024-05-27T06:43:39.501Z"}
+{"level":"info","message":"[http:52168 FeedUITests.testErrorHandling().lists] ::1:52207 => GET /trending.json","timestamp":"2024-05-27T06:43:40.651Z"}
+{"level":"info","message":"[http:52168 FeedUITests.testErrorHandling().lists] ::1:52218 => GET /trending.json","timestamp":"2024-05-27T06:43:42.998Z"}
+{"level":"info","message":"[http:52169 FeedUITests.testErrorHandling().images] ::1:52219 => GET /discover/images/400/852a66f0-bdf4-013c-5160-0acc26574db2.jpg","timestamp":"2024-05-27T06:43:43.036Z"}
+{"level":"info","message":"[http:52169 FeedUITests.testErrorHandling().images] ::1:52220 => GET /discover/images/400/2f31dfb0-2249-0132-b5ae-5f4c86fd3263.jpg","timestamp":"2024-05-27T06:43:43.060Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:44:25.595Z"}
+{"level":"info","message":"[http:52394 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T06:44:25.608Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:44:59.008Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T06:44:59.031Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] ::1:52504 => GET /discover/images","timestamp":"2024-05-27T06:45:17.177Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] ::1:52505 => GET /favicon.ico","timestamp":"2024-05-27T06:45:17.247Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] no predicate match, using default response","timestamp":"2024-05-27T06:45:17.250Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] ::1:52629 => GET /discover/images","timestamp":"2024-05-27T06:46:14.196Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] ::1:52631 => GET /favicon.ico","timestamp":"2024-05-27T06:46:14.238Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] no predicate match, using default response","timestamp":"2024-05-27T06:46:14.240Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] ::1:52653 => GET /discover/images","timestamp":"2024-05-27T06:46:21.466Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] ::1:52655 => GET /favicon.ico","timestamp":"2024-05-27T06:46:21.546Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] no predicate match, using default response","timestamp":"2024-05-27T06:46:21.549Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] ::1:52660 => GET /discover/images","timestamp":"2024-05-27T06:46:21.616Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] ::1:52661 => GET /favicon.ico","timestamp":"2024-05-27T06:46:21.683Z"}
+{"level":"info","message":"[http:52467 FeedUITests.testErrorHandling().images] no predicate match, using default response","timestamp":"2024-05-27T06:46:21.685Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:46:55.151Z"}
+{"level":"info","message":"[http:52873 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T06:46:55.154Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:47:01.493Z"}
+{"level":"info","message":"[http:52912 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T06:47:01.497Z"}
+{"level":"info","message":"[http:52873 FeedUITests.testErrorHandling().lists] ::1:52923 => GET /trending.json","timestamp":"2024-05-27T06:47:03.183Z"}
+{"level":"info","message":"[http:52873 FeedUITests.testErrorHandling().lists] ::1:52932 => GET /trending.json","timestamp":"2024-05-27T06:47:04.326Z"}
+{"level":"info","message":"[http:52873 FeedUITests.testErrorHandling().lists] ::1:52945 => GET /trending.json","timestamp":"2024-05-27T06:47:06.715Z"}
+{"level":"info","message":"[http:52912 FeedUITests.testErrorHandling().images] ::1:52946 => GET /discover/images/400/852a66f0-bdf4-013c-5160-0acc26574db2.jpg","timestamp":"2024-05-27T06:47:06.751Z"}
+{"level":"info","message":"[http:52912 FeedUITests.testErrorHandling().images] ::1:52948 => GET /discover/images/400/2f31dfb0-2249-0132-b5ae-5f4c86fd3263.jpg","timestamp":"2024-05-27T06:47:06.796Z"}
+{"level":"info","message":"[http:52873 FeedUITests.testErrorHandling().lists] ::1:52968 => GET /discover/images","timestamp":"2024-05-27T06:47:09.637Z"}
+{"level":"info","message":"[http:52873 FeedUITests.testErrorHandling().lists] no predicate match, using default response","timestamp":"2024-05-27T06:47:09.638Z"}
+{"level":"info","message":"[http:52873 FeedUITests.testErrorHandling().lists] ::1:52969 => GET /favicon.ico","timestamp":"2024-05-27T06:47:09.678Z"}
+{"level":"info","message":"[http:52873 FeedUITests.testErrorHandling().lists] no predicate match, using default response","timestamp":"2024-05-27T06:47:09.679Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:47:28.618Z"}
+{"level":"info","message":"[http:53013 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T06:47:28.625Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:47:28.660Z"}
+{"level":"info","message":"[http:53014 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T06:47:28.665Z"}
+{"level":"info","message":"[http:53013 FeedUITests.testErrorHandling().lists] ::1:53019 => GET /trending.json","timestamp":"2024-05-27T06:47:30.171Z"}
+{"level":"info","message":"[http:52873 FeedUITests.testErrorHandling().lists] ::1:53020 => GET /discover/images","timestamp":"2024-05-27T06:47:30.346Z"}
+{"level":"info","message":"[http:52873 FeedUITests.testErrorHandling().lists] no predicate match, using default response","timestamp":"2024-05-27T06:47:30.347Z"}
+{"level":"info","message":"[http:52873 FeedUITests.testErrorHandling().lists] ::1:53021 => GET /favicon.ico","timestamp":"2024-05-27T06:47:30.385Z"}
+{"level":"info","message":"[http:52873 FeedUITests.testErrorHandling().lists] no predicate match, using default response","timestamp":"2024-05-27T06:47:30.386Z"}
+{"level":"info","message":"[http:53013 FeedUITests.testErrorHandling().lists] ::1:53024 => GET /trending.json","timestamp":"2024-05-27T06:47:31.333Z"}
+{"level":"info","message":"[http:53013 FeedUITests.testErrorHandling().lists] ::1:53029 => GET /trending.json","timestamp":"2024-05-27T06:47:33.717Z"}
+{"level":"info","message":"[http:53014 FeedUITests.testErrorHandling().images] ::1:53030 => GET /discover/images/400/852a66f0-bdf4-013c-5160-0acc26574db2.jpg","timestamp":"2024-05-27T06:47:33.757Z"}
+{"level":"info","message":"[http:53014 FeedUITests.testErrorHandling().images] ::1:53031 => GET /discover/images/400/2f31dfb0-2249-0132-b5ae-5f4c86fd3263.jpg","timestamp":"2024-05-27T06:47:33.760Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:51:05.621Z"}
+{"level":"info","message":"[http:53885 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T06:51:05.625Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:51:05.664Z"}
+{"level":"info","message":"[http:53887 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T06:51:05.667Z"}
+{"level":"info","message":"[http:53885 FeedUITests.testErrorHandling().lists] ::1:53898 => GET /trending.json","timestamp":"2024-05-27T06:51:07.264Z"}
+{"level":"info","message":"[http:53885 FeedUITests.testErrorHandling().lists] ::1:53906 => GET /trending.json","timestamp":"2024-05-27T06:51:08.362Z"}
+{"level":"info","message":"[http:53885 FeedUITests.testErrorHandling().lists] ::1:53910 => GET /trending.json","timestamp":"2024-05-27T06:51:10.734Z"}
+{"level":"info","message":"[http:53887 FeedUITests.testErrorHandling().images] ::1:53912 => GET /discover/images/400/852a66f0-bdf4-013c-5160-0acc26574db2.jpg","timestamp":"2024-05-27T06:51:10.780Z"}
+{"level":"info","message":"[http:53887 FeedUITests.testErrorHandling().images] ::1:53913 => GET /discover/images/400/2f31dfb0-2249-0132-b5ae-5f4c86fd3263.jpg","timestamp":"2024-05-27T06:51:10.783Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:52:27.475Z"}
+{"level":"info","message":"[http:54067 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T06:52:27.480Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:52:27.522Z"}
+{"level":"info","message":"[http:54072 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T06:52:27.525Z"}
+{"level":"info","message":"[http:54067 FeedUITests.testErrorHandling().lists] ::1:54076 => GET /trending.json","timestamp":"2024-05-27T06:52:29.083Z"}
+{"level":"info","message":"[http:54067 FeedUITests.testErrorHandling().lists] ::1:54080 => GET /trending.json","timestamp":"2024-05-27T06:52:30.352Z"}
+{"level":"info","message":"[http:54067 FeedUITests.testErrorHandling().lists] ::1:54084 => GET /trending.json","timestamp":"2024-05-27T06:52:32.727Z"}
+{"level":"info","message":"[http:54072 FeedUITests.testErrorHandling().images] ::1:54085 => GET /discover/images/400/852a66f0-bdf4-013c-5160-0acc26574db2.jpg","timestamp":"2024-05-27T06:52:32.766Z"}
+{"level":"info","message":"[http:54072 FeedUITests.testErrorHandling().images] ::1:54086 => GET /discover/images/400/2f31dfb0-2249-0132-b5ae-5f4c86fd3263.jpg","timestamp":"2024-05-27T06:52:32.776Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:54:59.184Z"}
+{"level":"info","message":"[http:54551 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T06:54:59.189Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:54:59.223Z"}
+{"level":"info","message":"[http:54552 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T06:54:59.227Z"}
+{"level":"info","message":"[http:54551 FeedUITests.testErrorHandling().lists] ::1:54559 => GET /trending.json","timestamp":"2024-05-27T06:55:00.849Z"}
+{"level":"info","message":"[http:54551 FeedUITests.testErrorHandling().lists] ::1:54562 => GET /trending.json","timestamp":"2024-05-27T06:55:01.990Z"}
+{"level":"info","message":"[http:54551 FeedUITests.testErrorHandling().lists] ::1:54569 => GET /trending.json","timestamp":"2024-05-27T06:55:04.370Z"}
+{"level":"info","message":"[http:54552 FeedUITests.testErrorHandling().images] ::1:54570 => GET /discover/images/400/852a66f0-bdf4-013c-5160-0acc26574db2.jpg","timestamp":"2024-05-27T06:55:04.410Z"}
+{"level":"info","message":"[http:54552 FeedUITests.testErrorHandling().images] ::1:54571 => GET /discover/images/400/2f31dfb0-2249-0132-b5ae-5f4c86fd3263.jpg","timestamp":"2024-05-27T06:55:04.416Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:55:19.841Z"}
+{"level":"info","message":"[http:54615 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T06:55:19.843Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T06:55:19.874Z"}
+{"level":"info","message":"[http:54616 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T06:55:19.876Z"}
+{"level":"info","message":"[http:54615 FeedUITests.testErrorHandling().lists] ::1:54621 => GET /trending.json","timestamp":"2024-05-27T06:55:21.727Z"}
+{"level":"info","message":"[http:54615 FeedUITests.testErrorHandling().lists] ::1:54626 => GET /trending.json","timestamp":"2024-05-27T06:55:22.970Z"}
+{"level":"info","message":"[http:54615 FeedUITests.testErrorHandling().lists] ::1:54632 => GET /trending.json","timestamp":"2024-05-27T06:55:25.355Z"}
+{"level":"info","message":"[http:54616 FeedUITests.testErrorHandling().images] ::1:54633 => GET /discover/images/400/852a66f0-bdf4-013c-5160-0acc26574db2.jpg","timestamp":"2024-05-27T06:55:25.413Z"}
+{"level":"info","message":"[http:54616 FeedUITests.testErrorHandling().images] ::1:54634 => GET /discover/images/400/2f31dfb0-2249-0132-b5ae-5f4c86fd3263.jpg","timestamp":"2024-05-27T06:55:25.437Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T07:01:21.780Z"}
+{"level":"info","message":"[http:55574 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T07:01:21.784Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T07:01:21.849Z"}
+{"level":"info","message":"[http:55576 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T07:01:21.851Z"}
+{"level":"info","message":"[http:55574 FeedUITests.testErrorHandling().lists] ::1:55585 => GET /trending.json","timestamp":"2024-05-27T07:01:23.443Z"}
+{"level":"info","message":"[http:55574 FeedUITests.testErrorHandling().lists] ::1:55589 => GET /trending.json","timestamp":"2024-05-27T07:01:24.869Z"}
+{"level":"info","message":"[http:55574 FeedUITests.testErrorHandling().lists] ::1:55595 => GET /trending.json","timestamp":"2024-05-27T07:01:27.270Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T07:01:54.454Z"}
+{"level":"info","message":"[http:55747 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T07:01:54.458Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T07:01:54.487Z"}
+{"level":"info","message":"[http:55748 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T07:01:54.489Z"}
+{"level":"info","message":"[http:55747 FeedUITests.testErrorHandling().lists] ::1:55752 => GET /trending.json","timestamp":"2024-05-27T07:01:56.064Z"}
+{"level":"info","message":"[http:55747 FeedUITests.testErrorHandling().lists] ::1:55755 => GET /trending.json","timestamp":"2024-05-27T07:01:57.247Z"}
+{"level":"info","message":"[http:55747 FeedUITests.testErrorHandling().lists] ::1:55761 => GET /trending.json","timestamp":"2024-05-27T07:01:59.623Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T07:03:00.855Z"}
+{"level":"info","message":"[http:55962 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T07:03:00.859Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T07:03:00.890Z"}
+{"level":"info","message":"[http:55963 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T07:03:00.895Z"}
+{"level":"info","message":"[http:55962 FeedUITests.testErrorHandling().lists] ::1:55967 => GET /trending.json","timestamp":"2024-05-27T07:03:02.592Z"}
+{"level":"info","message":"[http:55962 FeedUITests.testErrorHandling().lists] ::1:55972 => GET /trending.json","timestamp":"2024-05-27T07:03:03.710Z"}
+{"level":"info","message":"[http:55962 FeedUITests.testErrorHandling().lists] ::1:55984 => GET /trending.json","timestamp":"2024-05-27T07:03:06.111Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T07:03:22.343Z"}
+{"level":"info","message":"[http:56146 FeedUITests.testErrorHandling().lists] Open for business...","timestamp":"2024-05-27T07:03:22.347Z"}
+{"level":"info","message":"[mb:2525] POST /imposters","timestamp":"2024-05-27T07:03:22.383Z"}
+{"level":"info","message":"[http:56147 FeedUITests.testErrorHandling().images] Open for business...","timestamp":"2024-05-27T07:03:22.386Z"}
+{"level":"info","message":"[mb:2525] GET /imposters/56146?removeProxies=false&replayable=false","timestamp":"2024-05-27T07:03:33.860Z"}
+{"level":"info","message":"[mb:2525] DELETE /imposters/56147?removeProxies=false&replayable=false","timestamp":"2024-05-27T07:03:33.868Z"}
+{"level":"info","message":"[http:56147 FeedUITests.testErrorHandling().images] Ciao for now","timestamp":"2024-05-27T07:03:33.873Z"}
+{"level":"info","message":"[mb:2525] DELETE /imposters/56146?removeProxies=false&replayable=false","timestamp":"2024-05-27T07:03:33.877Z"}
+{"level":"info","message":"[http:56146 FeedUITests.testErrorHandling().lists] Ciao for now","timestamp":"2024-05-27T07:03:33.877Z"}
+{"level":"info","message":"[mb:2525] GET /imposters/56147?removeProxies=false&replayable=false","timestamp":"2024-05-27T07:03:33.884Z"}
+{"level":"info","message":"[mb:2525] Adios - see you soon?","timestamp":"2024-05-27T08:07:25.724Z"}

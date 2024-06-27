@@ -8,15 +8,6 @@
         "revision" : "f455c2975872ccd2d9c81594c658af65716e9b9a",
         "version" : "5.9.1"
       }
-    },
-    {
-      "identity" : "mountebankswift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/MountebankSwift/MountebankSwift.git",
-      "state" : {
-        "revision" : "8c888938d31bfdf57f678bb964255a94fab6aa6f",
-        "version" : "0.11.0"
-      }
     }
   ],
   "version" : 2

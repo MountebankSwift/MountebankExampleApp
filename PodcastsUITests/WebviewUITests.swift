@@ -14,11 +14,16 @@ final class WebviewUITests: XCTestCase {
 
     // This test uses a single imposter for both hosts that the app is fetching
     func testOpenWebview() async throws {
+        let podcastImageData = UIImage(
+            systemName: "speaker.wave.2.circle.fill",
+            withConfiguration: UIImage.SymbolConfiguration.preferringMulticolor()
+        )!.pngData()!
+
         let imposter = Imposter(
             name: "\(Self.self).\(#function)",
             stubs: [
                 Stub(
-                    response: Is(statusCode: 200, body: Example.jpg.data),
+                    response: Is(statusCode: 200, body: podcastImageData),
                     predicate: .matches(Request(method: .get, path: "/discover/image"))
                 ),
                 Stub(
@@ -39,11 +44,11 @@ final class WebviewUITests: XCTestCase {
             recordRequests: true
         )
 
-        guard let port = try await mountebank.postImposter(imposter: imposter).port else {
+        guard let imposterPort = try await mountebank.postImposter(imposter: imposter).port else {
             XCTFail("port should have been set")
             return
         }
-        addTeardownBlock { try await self.mountebank.deleteImposter(port: port) }
+        addTeardownBlock { try await self.mountebank.deleteImposter(port: imposterPort) }
 
         let webviewStub = Stub(
             responses: [
@@ -56,7 +61,7 @@ final class WebviewUITests: XCTestCase {
                                 "author": "Tieme van Veen",
                                 "description": "Please never use a webview in your app...",
                                 "uuid": "2f31dfb0-2249-0132-b5ae-5f4c86fd3263",
-                                "website": "http://localhost:\(port)/sample.html",
+                                "website": "http://localhost:\(imposterPort)/sample.html",
                             ],
                         ],
                     ]
@@ -65,12 +70,12 @@ final class WebviewUITests: XCTestCase {
             predicate: .equals(Request(method: .get, path: "/trending.json"))
         )
 
-        try await mountebank.postImposterStub(stub: webviewStub, port: port)
+        try await mountebank.postImposterStub(stub: webviewStub, port: imposterPort)
 
         let app = XCUIApplication()
         app.launchArguments = ["-UITesting"]
-        app.launchEnvironment["listApiHost"] = "http://localhost:\(port)"
-        app.launchEnvironment["imagesApiHost"] = "http://localhost:\(port)"
+        app.launchEnvironment["listApiHost"] = "http://localhost:\(imposterPort)"
+        app.launchEnvironment["imagesApiHost"] = "http://localhost:\(imposterPort)"
         app.launch()
         sleep(2)
 

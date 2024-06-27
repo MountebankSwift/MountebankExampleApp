@@ -21,13 +21,7 @@ final class FeedUITests: XCTestCase {
                         Is(statusCode: 500),
                         Is(statusCode: 200, body: ["podcasts": []]),
                         Is(statusCode: 200, body: Feed(podcasts: [
-                            Podcast(
-                                title: "Cocaheads",
-                                author: "iOS devs NL",
-                                description: "A great podcast about coding in The Netherlands",
-                                id: "12345",
-                                url: "https://https://cocoaheads.nl/"
-                            ),
+
                             Podcast(
                                 title: "Serial",
                                 author: "Serial Productions",
@@ -42,13 +36,7 @@ final class FeedUITests: XCTestCase {
                                 id: "852a66f0-bdf4-013c-5160-0acc26574db2",
                                 url: "https://www.iheart.com/podcast/1119-rolling-stones-500-greate-156412458/"
                             ),
-                            Podcast(
-                                title: "Murder in the Hollywood Hills",
-                                author: "NBC News",
-                                description: "Kristi Johnson was shopping at a mall in Los Angeles when a man invited her to a photo shoot for the next Bond film. That afternoon, the 21-year-old got into her little white sportscar and drove to the shoot location up in the Hollywood Hills. She was never seen alive again. ",
-                                id: "93138b50-c531-013c-c54a-0aec82e01c75",
-                                url: "https://murder-in-the-hollywood-hills.simplecast.com"
-                            ),
+
                         ])),
                     ],
                     predicate: .equals(Request(method: .get, path: "/trending.json"))
@@ -63,13 +51,19 @@ final class FeedUITests: XCTestCase {
         }
         addTeardownBlock { try await self.mountebank.deleteImposter(port: listsPort) }
 
+
+        let podcastImageData = UIImage(
+            systemName: "speaker.wave.2.circle.fill",
+            withConfiguration: UIImage.SymbolConfiguration.preferringMulticolor()
+        )!.pngData()!
+
         let imagesImposter = Imposter(
             name: "\(Self.self).\(#function).images",
             stubs: [
                 Stub(
-                    response: Is(statusCode: 200, body: Example.jpg.data),
+                    response: Is(statusCode: 200, body: podcastImageData),
                     predicate: .matches(Request(method: .get, path: "/discover/images"))
-                ),
+                )
             ],
             recordRequests: true
         )
@@ -96,15 +90,15 @@ final class FeedUITests: XCTestCase {
 
         sleep(2)
 
-        XCTAssertTrue(app.staticTexts["Cocaheads"].exists)
+        XCTAssertTrue(app.staticTexts["Serial"].exists)
 
         let listRequests = try await mountebank.getImposter(port: listsPort).requests
         let imagesRequests = try await mountebank.getImposter(port: imagesPort).requests
 
         XCTAssertEqual(listRequests?.count, 3)
-        XCTAssertEqual(listRequests?.first?.headers?.contains { $0.key == "Accept" }, true)
+        XCTAssertEqual(listRequests?.first?.headers?.contains { $0 == ("Accept", "application/json") }, true)
 
-        XCTAssertEqual(imagesRequests?.count, 4)
+        XCTAssertEqual(imagesRequests?.count, 2)
 
         sleep(2)
     }

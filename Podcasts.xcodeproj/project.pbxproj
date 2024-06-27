@@ -10,16 +10,13 @@
 		BD01923E2BBF4349000D8875 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD01923D2BBF4349000D8875 /* Preview Assets.xcassets */; };
 		BD0192472BBFE698000D8875 /* ImageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0192452BBFE698000D8875 /* ImageAPI.swift */; };
 		BD0192482BBFE698000D8875 /* PodcastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0192462BBFE698000D8875 /* PodcastAPI.swift */; };
-		BD0192872BC02D65000D8875 /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0192862BC02D65000D8875 /* ExampleData.swift */; };
 		BD01928D2BC03175000D8875 /* podcasts.json in Resources */ = {isa = PBXBuildFile; fileRef = BD01928C2BC03175000D8875 /* podcasts.json */; };
-		BD01928E2BC03346000D8875 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD01928B2BC02DD2000D8875 /* sample.jpg */; };
 		BD0192912BC0342E000D8875 /* PodcastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01928F2BC0342E000D8875 /* PodcastUITests.swift */; };
 		BD0192922BC0342E000D8875 /* FeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0192902BC0342E000D8875 /* FeedUITests.swift */; };
 		BD01929D2BC04650000D8875 /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01929C2BC04650000D8875 /* Host.swift */; };
 		BD0BA89B2BC6A29B00F78898 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4942632BBF284C00DFFCBE /* Podcast.swift */; };
 		BD0BA89C2BC6A29B00F78898 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4942642BBF284C00DFFCBE /* Feed.swift */; };
 		BD0BA89E2BC6A2B000F78898 /* Podcast+samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0BA89D2BC6A2B000F78898 /* Podcast+samples.swift */; };
-		BD0BA8A42BC6A43300F78898 /* MountebankSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BD0BA8A32BC6A43300F78898 /* MountebankSwift */; };
 		BD4942722BBF284C00DFFCBE /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4942632BBF284C00DFFCBE /* Podcast.swift */; };
 		BD4942732BBF284C00DFFCBE /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4942642BBF284C00DFFCBE /* Feed.swift */; };
 		BD4942742BBF284C00DFFCBE /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4942662BBF284C00DFFCBE /* ApiError.swift */; };
@@ -52,8 +49,6 @@
 		BD01923D2BBF4349000D8875 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD0192452BBFE698000D8875 /* ImageAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAPI.swift; sourceTree = "<group>"; };
 		BD0192462BBFE698000D8875 /* PodcastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastAPI.swift; sourceTree = "<group>"; };
-		BD0192862BC02D65000D8875 /* ExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
-		BD01928B2BC02DD2000D8875 /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
 		BD01928C2BC03175000D8875 /* podcasts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = podcasts.json; sourceTree = "<group>"; };
 		BD01928F2BC0342E000D8875 /* PodcastUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastUITests.swift; sourceTree = "<group>"; };
 		BD0192902BC0342E000D8875 /* FeedUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedUITests.swift; sourceTree = "<group>"; };
@@ -92,7 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD0BA8A42BC6A43300F78898 /* MountebankSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,9 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				BD0BA89D2BC6A2B000F78898 /* Podcast+samples.swift */,
-				BD01928B2BC02DD2000D8875 /* sample.jpg */,
 				BD01928C2BC03175000D8875 /* podcasts.json */,
-				BD0192862BC02D65000D8875 /* ExampleData.swift */,
 			);
 			path = ExampleData;
 			sourceTree = "<group>";
@@ -259,7 +251,6 @@
 			);
 			name = PodcastsUITests;
 			packageProductDependencies = (
-				BD0BA8A32BC6A43300F78898 /* MountebankSwift */,
 			);
 			productName = PodcastsUITests;
 			productReference = BDFCA9AE2BBE8634009FDE51 /* PodcastsUITests.xctest */;
@@ -295,7 +286,6 @@
 			mainGroup = BDFCA98B2BBE8631009FDE51;
 			packageReferences = (
 				BDFCA9C12BBE882A009FDE51 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				BD0BA8A22BC6A43300F78898 /* XCRemoteSwiftPackageReference "MountebankSwift" */,
 			);
 			productRefGroup = BDFCA9952BBE8631009FDE51 /* Products */;
 			projectDirPath = "";
@@ -322,7 +312,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD01928D2BC03175000D8875 /* podcasts.json in Resources */,
-				BD01928E2BC03346000D8875 /* sample.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +346,6 @@
 				BDCA1F8F2BC8363300A91527 /* testRecordStubs.stubs.images.swift in Sources */,
 				BDCA1F902BC8363300A91527 /* testRecordStubs.stubs.lists.swift in Sources */,
 				BD0BA89C2BC6A29B00F78898 /* Feed.swift in Sources */,
-				BD0192872BC02D65000D8875 /* ExampleData.swift in Sources */,
 				BDCA1F842BC8322400A91527 /* ProxyExampleUITests.swift in Sources */,
 				BDD607E72BC33179003EBECC /* WebviewUITests.swift in Sources */,
 				BD0192912BC0342E000D8875 /* PodcastUITests.swift in Sources */,
@@ -633,14 +621,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BD0BA8A22BC6A43300F78898 /* XCRemoteSwiftPackageReference "MountebankSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/MountebankSwift/MountebankSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.11.0;
-			};
-		};
 		BDFCA9C12BBE882A009FDE51 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -652,11 +632,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BD0BA8A32BC6A43300F78898 /* MountebankSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BD0BA8A22BC6A43300F78898 /* XCRemoteSwiftPackageReference "MountebankSwift" */;
-			productName = MountebankSwift;
-		};
 		BDFCA9C22BBE882A009FDE51 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BDFCA9C12BBE882A009FDE51 /* XCRemoteSwiftPackageReference "Alamofire" */;
